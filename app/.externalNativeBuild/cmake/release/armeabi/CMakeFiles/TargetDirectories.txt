@@ -1,0 +1,3 @@
+/home/ihimu/VRSpatialAudioDemoAndroid/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/rebuild_cache.dir
+/home/ihimu/VRSpatialAudioDemoAndroid/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/edit_cache.dir
+/home/ihimu/VRSpatialAudioDemoAndroid/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/native-lib.dir

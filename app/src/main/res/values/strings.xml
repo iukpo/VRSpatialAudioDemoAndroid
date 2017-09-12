@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">VR Spatial Audio Demo (Android)</string>
+    <string name="loading">Loading video...</string>
+    <string name="loading_hint_error">Loading video already takes a while. Make sure you are connected to the internet, check logcat for video/exoplayer/codec-related errors and/or try another video (see StereoscopicView#onCreate() or MonoscopicView for predefined videos).</string>
+    <string name="drag">Drag video to look around!</string>
+    <string name="switchtomono">Switch to Monoscopic View</string>
+    <string name="switchtostereo">Switch to Stereoscopic View</string>
+    <string name="datasourceerror">Error processing local file!</string>
+</resources>

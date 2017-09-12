@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "24.0.1"
+    defaultConfig {
+        applicationId "com.vrspatialaudiodemoandroid.ihimu.vrspatialaudiodemoandroid"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags "-frtti -fexceptions"
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+
+    //ExoPlayer dependencies
+    compile 'com.google.android.exoplayer:exoplayer:r2.4.0'
+    compile 'com.google.android.exoplayer:extension-gvr:r2.4.0'
+
+    /* Adds Google VR spatial audio support (Do not include if using ExoPlayer GVR extension.
+    Causes crashing.)*/
+    //compile 'com.google.vr:sdk-audio:1.80.0'
+
+    // Required for all Google VR apps
+    compile 'com.google.vr:sdk-base:1.80.0'
+
+    //Spectaculum added to provide support for VR rendering
+    compile 'net.protyposis.android.spectaculum:spectaculum:1.2.0'
+    compile 'net.protyposis.android.spectaculum:spectaculum-effect-immersive:1.2.0'
+
+    testCompile 'junit:junit:4.12'
+}

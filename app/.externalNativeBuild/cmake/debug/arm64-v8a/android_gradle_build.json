@@ -1,0 +1,38 @@
+
+{
+	"buildFiles" : [ "/home/ihimu/VRSpatialAudioDemoAndroid/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/home/ihimu/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/ihimu/VRSpatialAudioDemoAndroid/app/.externalNativeBuild/cmake/debug/arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"native-lib-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "/home/ihimu/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/ihimu/VRSpatialAudioDemoAndroid/app/.externalNativeBuild/cmake/debug/arm64-v8a --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android --gcc-toolchain=/home/ihimu/Android/Sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/linux-x86_64 --sysroot=/home/ihimu/Android/Sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem /home/ihimu/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /home/ihimu/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/include -isystem /home/ihimu/Android/Sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /home/ihimu/Android/Sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -frtti -fexceptions -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/ihimu/VRSpatialAudioDemoAndroid/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/home/ihimu/VRSpatialAudioDemoAndroid/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "/home/ihimu/VRSpatialAudioDemoAndroid/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so",
+			"toolchain" : "15170892853878666164"
+		}
+	},
+	"toolchains" : 
+	{
+		"15170892853878666164" : 
+		{
+			"cCompilerExecutable" : "/home/ihimu/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/ihimu/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}
